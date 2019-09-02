@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>list</title>
+</head>
+<body>
+	{% for item in items %}
+		<h1>Name: {{item.name}}</h1>	
+		<p>Store: {{item.store.name}}</p>
+		<p>Out of stock: {{item.is_empty}}</p>	
+		<p>Last update: {{item.last_updated}}</p>	
+	{% endfor %}
+</body>
+</html>
